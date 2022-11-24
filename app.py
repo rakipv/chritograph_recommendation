@@ -23,10 +23,17 @@ def load_lottie_url(url: str):
     return r.json()
 
 
+<<<<<<< HEAD
 lottie_animation_1 = "https://assets6.lottiefiles.com/packages/lf20_zrqthn6o.json"
 
 lottie_anime_json = load_lottie_url(lottie_animation_1)
 st.title('Welcome to Christograph Recommender')
+=======
+movie_dict = pickle.load(open('movie_dict.pkl', 'rb'))
+movies = pd.DataFrame(movie_dict)
+
+similarity = pickle.load(open('similarity.pkl', 'rb'))
+>>>>>>> 0bb1abb12d1f75820e9b7dbe1c21a5565084a4e2
 
 st_lottie(lottie_anime_json, key="hello" , width=600)
 
