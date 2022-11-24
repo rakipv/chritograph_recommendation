@@ -18,7 +18,7 @@ def recommend(movie):
     return recommended_movies
 
 
-movie_dict = pickle.load(open('venv/movie_dict.pkl', 'rb'))
+movie_dict = pickle.load(open('R:/react_voice/chritograph_recommendation/venv/movie_dict.pkl', 'rb'))
 movies = pd.DataFrame(movie_dict)
 
 similarity = pickle.load(open('venv/similarity.pkl', 'rb'))
